@@ -16,9 +16,10 @@ body{
 header  {
     font-family: "Roboto Mono"; 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     place-items: center;
+    height: 100px;
  
        a{
         text-decoration: none;
@@ -49,7 +50,8 @@ header  {
                 font-family: "Roboto Mono";
                 color: #0F0F0F;
                 font-size: 18px;
-                letter-spacing: 2px;
+                font-weight:500 ;
+                letter-spacing: 1px;
             }
          }
         
@@ -94,3 +96,71 @@ nav{
         font-family: "Plus Jakarta Sans", sans-serif;
         font-weight: 800;
     }
+
+.landing-page{
+    position: relative;
+    display: grid;
+    color: #FFFFFF;
+    font-family: "Roboto";
+    grid-template-columns:repeat(4,1fr) ;
+    grid-template-rows: repeat(5,200px);
+
+}
+.landing-page div:first-child{
+     grid-area: 1/1/4/5;
+}
+.hero-content{ 
+    grid-area: 4/1/6/3;
+    margin-left: 30px;
+    h3{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #B3B3B2;
+        border: 2px dashed #333333;
+        border-radius: 12px;
+        width: 92px;
+        height: 40px;
+        margin-top: 54px;
+        margin-right:10px;
+        
+    }
+    h2{
+        font-size: 45px;
+        color:#FFFFFF ;
+        font-weight:500 ;
+        font-family: "Roboto";
+        width: 650px ;
+        height: auto;
+        margin-top: 30px;
+    }
+    p{
+         margin-top: 50px;
+        color: #676665;
+        width: 560px;
+    }
+
+}
+.stats{
+      grid-area: 4/3/6/5;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2,200px);
+      place-items: center;
+    h3{
+        font-size: 50px;
+        font-weight: 500;
+    }
+    p{
+      
+        font-size: 18px;
+        color: #81807E;
+       
+    }
+}
+/* 
+.hero-content h2:first-child{
+    position: absolute;
+    bottom: 410px;
+    left:700px;
+} */
