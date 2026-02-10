@@ -22,8 +22,10 @@ header  {
     place-items: center;
     height: 100px;
  
-       a{
-        text-decoration: none;
+       img{
+        width:151px;
+        height: 27px;
+        cursor: pointer;
       }
       div{
         display: flex;
@@ -488,7 +490,7 @@ nav{
     color: white;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     font-family: "Roboto";
     div{
          h2{
@@ -540,9 +542,160 @@ nav{
    span{
      border-left: 2px dashed #262626;
      border-bottom: 2px dashed #262626;
-     height: 226px;
+     height: 200px;
+     font-family: "roboto";
      h3{
-
-     }
+         padding-top: 60px;
+         padding-left: 60px;
+         font-weight: 500;
+         font-size: 24px;
+         }
+         p{
+            padding-top: 16px;
+            padding-left: 60px;
+            font-weight: 400;
+            font-size: 18px;
+            color: #81807E;
+         }
    }
+ }
+.Questions span:nth-child(2),
+.Questions span:nth-child(4),
+.Questions span:nth-child(6){
+   border-left: none;
 }
+.Questions span:nth-child(6){
+    border-bottom: none;
+}
+.Questions span:nth-child(7)
+.Questions span:nth-child(5)
+.Questions span:nth-child(3){
+  border-right: none;
+}
+.Questions span:nth-child(7){
+    border-bottom: none;
+} 
+ .logo > img:first-child{
+    padding-top: 100px;
+    width: 788px;
+    height: 250px;
+  }
+  .logo{
+    height:346px ;
+    display: flex;
+    justify-content: space-around;
+    border: 2px dashed #262626;
+    border-top:none;
+    cursor: pointer;
+  }
+  .icons{
+    padding-top: 160px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    div{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: #D6CDC2;
+        border-radius: 12px;
+    }
+  }
+  .subscribe{
+    font-family: "Roboto";
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    color: white;
+    height: 279px;
+     border: 2px dashed #262626;
+     border-top: none;
+      .home{
+      
+        padding-top: 96px;
+           h3{
+             font-weight: 500;
+             font-size: 22px;
+             color: #FFFFFF;
+             padding-bottom: 30px;
+              padding-left: 110px;
+           }
+             
+      }
+    }
+  .About ul{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            padding-left: 110px;
+            margin: 0px;
+            li{
+                width: 100px;
+                color:#676665 ;
+                font-size: 15px;
+            }
+
+           }
+ .About ul li:nth-child(3){
+    width: 140px;
+ }
+.About ul li:nth-child(4){
+    position: relative;
+    right: 30px;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    padding-top:90px;
+    
+     margin-left:120px;
+      label
+   {
+    color: #FFFFFF;
+     font-family: "roboto";
+     font-size: 22px;
+     font-weight: 500;
+   }
+   input{
+   margin-top: 20px;
+   height:40px ;
+   width: 260px;
+   border-radius: 12px;
+   background-color:#1A1A1A ;
+   }
+  input::placeholder{
+     color: #676665;
+     font-size: 18px;
+     display: flex;
+     align-items: center;
+     padding-left: 18px;
+   }
+   img{
+      width:20px;
+      height: 20px;
+      position: relative;
+      left:228px;
+      bottom: 29px;
+    }
+}
+.watemark{
+    display: flex;
+    justify-content: space-around;
+    color: #B3B3B2;
+    height: 90px;
+    padding-top:31px ;
+      div ul{
+        display: flex;
+        flex-direction: row;
+       
+    }
+   
+}
+ .watemark div ul li:first-child{
+        padding-right: 10px;
+        margin-right: 10px;
+        border-right: 1px solid #81807E;
+ }
