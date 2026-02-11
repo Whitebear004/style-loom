@@ -138,6 +138,8 @@ nav{
     font-family: "Roboto";
     grid-template-columns:repeat(4,1fr) ;
     grid-template-rows: repeat(5,1fr);
+    border: 2px dashed #262626;
+    border-radius: 12px;
 
 }
 .landing-page div:first-child{
@@ -181,8 +183,8 @@ nav{
     }
     p{
          margin-top: 50px;
-        color: #676665;
-        width: 560px;
+         color: #676665;
+         width: 560px;
     }
 
 }
@@ -194,8 +196,10 @@ nav{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2,1fr);
-      place-items: center;
-      
+      border: 2px dashed #262626;
+      border-top:none ;
+      border-bottom: none;
+      border-right: none;
     h3{
         font-size: 50px;
         font-weight: 500;
@@ -207,8 +211,23 @@ nav{
        
     }
     article{
-      
+        padding-top:60px;
+        padding-left: 50px;
+        border: 2px dashed #262626;
+        border-left:none ;
+        border-top:none ;
     }
+}
+    .stats article:nth-child(2){
+        border-right: none;
+    }
+    .stats article:nth-child(3)
+ {
+      border-bottom: none;
+ }
+ .stats article:nth-child(4){
+    border-bottom: none;
+    border-right: none;
  }
  .shop-now-container {
     display: flex;
