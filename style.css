@@ -248,13 +248,14 @@ nav{
     margin-top: 10px;
 }
 .heo-section{
-    grid-area: 1/1/1/4;
+    grid-area: 1/1/2/4;
     display: flex;
     gap: 30px;
     flex-direction: column;
-    padding-top: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px; 
     padding-left: 80px;
-   
+    border-bottom: 2px dashed #262626;
       h2{
         color:#FFFFFF ;
         font-weight: 500;
@@ -271,14 +272,43 @@ nav{
 .content{
   grid-area: 2/1/2/4;
   display: grid;
-  grid-template-columns:repeat(3,1fr) ;
-  grid-template-rows: repeat(2,1fr);
-  place-items: center;
+  grid-template-columns:repeat(3,1fr) ; 
+  grid-template-rows: repeat(2,50%);
+
+  /* place-items: center; */
    /* padding-left: 43px; */
 }
+.content article:first-child{ 
+    border: none; } 
+.content article:nth-child(2){
+     border-right:none ;
+      border-bottom: none; 
+      border-top:none ; }
+ .content article:nth-child(3){
+     border-right:none ; 
+     border-bottom: none;
+      border-top:none; } 
+.content article:nth-child(4){ 
+    border-right:none ;
+     border-bottom: none; 
+     border-bottom: none;
+      border-left: none; } 
+.content article:nth-child(5){ 
+    border-right: none; 
+    border-bottom: none; } 
+.content article:nth-child(6){ 
+    border-bottom: none; 
+    border-right: none; }
 .content article{
-    
+    border: 2px dashed #262626;
+    padding-left: 80px;
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     h3{
+      
        font-size: 24px;
        color: #FFFFFF;
        padding-bottom:16px;
@@ -536,10 +566,9 @@ nav{
         } 
      }
      img{
-        left: 1240px;
-        bottom:-2715px;
-        position: absolute;
-
+     position: relative;
+     left: 1238px;
+     bottom: 288px;
      }
     }
      
