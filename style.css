@@ -244,8 +244,11 @@ nav{
     color: white;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows:auto auto;
     margin-top: 10px;
+    border: 2px dashed #262626;
+   border-bottom: none; 
+   border-radius:12px;
 }
 .heo-section{
     grid-area: 1/1/2/4;
@@ -275,9 +278,25 @@ nav{
   grid-template-columns:repeat(3,1fr) ; 
   grid-template-rows: repeat(2,50%);
 
-  /* place-items: center; */
-   /* padding-left: 43px; */
+    .icon-last{
+        position: relative;
+        left: 153px;
+        bottom:46px;
+    }
+    .last{
+        position: relative;
+        left: 135px;
+        bottom:37px;
+        
+    }
+    .lasts{
+        position: relative;
+        left: 157px;
+        bottom:37px;
+    }
 }
+
+
 .content article:first-child{ 
     border: none; } 
 .content article:nth-child(2){
