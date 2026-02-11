@@ -617,10 +617,12 @@ nav{
      height: 200px;
      font-family: "roboto";
      h3{
+         transition: color 0.5s ease-out 0s, transform 0.5s linear;
          padding-top: 60px;
          padding-left: 60px;
          font-weight: 500;
          font-size: 24px;
+         color: white;
          }
          p{
             padding-top: 16px;
@@ -628,9 +630,19 @@ nav{
             font-weight: 400;
             font-size: 18px;
             color: #81807E;
+            transition: transform 0.5s linear;
          }
    }
+   span h3:hover{
+    color: rgb(255, 0, 234);
+    transform: scale(1.1);
+    
+   }
+   span p:hover{
+     transform: scale(1.08);
+   }
  }
+
 .Questions span:nth-child(2),
 .Questions span:nth-child(4),
 .Questions span:nth-child(6){
@@ -667,6 +679,7 @@ nav{
     gap: 20px;
     justify-content: center;
     div{
+        
         cursor: pointer;
         display: flex;
         justify-content: center;
@@ -676,6 +689,7 @@ nav{
         background-color: #D6CDC2;
         border-radius: 12px;
     }
+    
   }
   .subscribe{
     font-family: "Roboto";
@@ -687,9 +701,11 @@ nav{
      border: 2px dashed #262626;
      border-top: none;
       .home{
-      
+    
         padding-top: 96px;
            h3{
+            
+           transition: transform 0.5s linear;
              font-weight: 500;
              font-size: 22px;
              color: #FFFFFF;
@@ -697,6 +713,9 @@ nav{
               padding-left: 110px;
            }
              
+      }
+      .home h3:hover{
+         transform: scale(1.1);
       }
     }
   .About ul{
